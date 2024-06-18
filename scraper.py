@@ -60,8 +60,8 @@ def extract_video_id(youtube_url):
     return match.group(1) if match else None
 
 if __name__ == "__main__":
-    api_key = "AIzaSyB8sBo94VnflqFJOIkldmMykF-y-_fkurg"
-    video_id = extract_video_id("https://www.youtube.com/watch?v=mIJf_ZB72Vw")
+    api_key = "Your-API-Key"
+    video_id = extract_video_id("YouTube-Link")
 
     all_comments = fetch_all_comments(api_key, video_id)
 
