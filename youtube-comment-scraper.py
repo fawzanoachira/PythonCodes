@@ -62,10 +62,12 @@ def extract_video_id(youtube_url):
 if __name__ == "__main__":
     api_key = ""
     video_id = extract_video_id("https://www.youtube.com/watch?v=mIJf_ZB72Vw")
+    api_key = "YourAPIKey"
+    video_id = extract_video_id("youtube-link")
 
     all_comments = fetch_all_comments(api_key, video_id)
 
-    csv_file_path = "balramvstharadas-movie-roast-ab.csv"
+    csv_file_path = "nameOfFile.csv"
     save_comments_to_csv(all_comments, csv_file_path)
 
     print(f"Comments have been saved to {os.path.abspath(csv_file_path)}")
