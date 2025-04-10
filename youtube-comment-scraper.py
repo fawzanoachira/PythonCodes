@@ -60,7 +60,6 @@ def extract_video_id(youtube_url):
     return match.group(1) if match else None
 
 if __name__ == "__main__":
-    api_key = ""
     video_id = extract_video_id("https://www.youtube.com/watch?v=mIJf_ZB72Vw")
     api_key = "YourAPIKey"
     video_id = extract_video_id("youtube-link")
